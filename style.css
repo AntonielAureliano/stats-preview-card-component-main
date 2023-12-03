@@ -42,14 +42,18 @@ main {
 .stats {
   align-content: center;
   background-color: var(--primary-dark-desaturated);
+  border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 80px;
+  justify-content: space-between;
+  padding: 60px;
 }
 
 .stats h1 {
   font-size: 2.2rem;
+  margin: 10px 0;
+  letter-spacing: 0.5px;
 }
 
 .stats h1 > span {
@@ -58,11 +62,16 @@ main {
 
 .stats p {
   color: var(--netral-slightly-transparent-white);
+  line-height: 1.8;
+  margin-top: 30px;
+  max-width: 40ch;
 }
 
 .stats-numbers {
   display: flex;
   gap: 60px;
+  justify-content: space-between;
+  max-width: 350px;
 }
 
 .stats-numbers p {
@@ -79,6 +88,10 @@ main {
   font-weight: 700;
 
   line-height: 1.9;
+}
+
+picture img {
+  border-radius: 0 10px 10px 0;
 }
 
 /*Footer*/
