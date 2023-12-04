@@ -38,6 +38,12 @@ main {
   max-width: 1140px;
 }
 
+@media screen and (max-width: 375px) {
+  main {
+    grid-template-columns: auto;
+  }
+}
+
 /*Stats*/
 .stats {
   align-content: center;
@@ -91,12 +97,21 @@ main {
 }
 
 picture {
-  background-color: var(--primary-soft-violet);
+  filter: hue-rotate(-90deg);
 }
 
 picture img {
   border-radius: 0 10px 10px 0;
-  opacity: 60%;
+  background-color: var(--primary-soft-violet);
+}
+
+@media screen and (max-width: 375px) {
+  picture {
+    grid-row: 1;
+  }
+
+  picture img {
+  }
 }
 
 /*Footer*/
