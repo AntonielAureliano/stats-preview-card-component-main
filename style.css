@@ -109,8 +109,9 @@ picture img {
   picture {
     grid-row: 1;
   }
-
-  picture img {
+  .stats-numbers {
+    flex-direction: column;
+    place-items: center;
   }
 }
 
