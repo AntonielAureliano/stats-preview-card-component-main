@@ -92,26 +92,56 @@ main {
   display: block;
   font-size: 1.25rem;
   font-weight: 700;
-
   line-height: 1.9;
 }
 
+@media screen and (max-width: 375px) {
+  .stats {
+    border-radius: 0 0 10px 10px;
+    max-width: 375px;
+    padding: 20px;
+  }
+
+  .stats-description h1 {
+    text-align: center;
+  }
+
+  .stats-description p {
+    margin: 20px auto;
+    max-width: 28ch;
+    text-align: center;
+  }
+
+  .stats-numbers {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
+    place-items: center;
+    text-align: center;
+  }
+}
+
+/*Picture*/
 picture {
-  filter: hue-rotate(-90deg);
+  background-color: var(--primary-soft-violet);
+  border-radius: 0 10px 10px 0;
+  max-width: 540px;
 }
 
 picture img {
   border-radius: 0 10px 10px 0;
-  background-color: var(--primary-soft-violet);
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 375px) {
   picture {
+    border-radius: 10px 10px 0 0;
     grid-row: 1;
   }
-  .stats-numbers {
-    flex-direction: column;
-    place-items: center;
+
+  picture img {
+    border-radius: 10px 10px 0 0;
+    max-width: 375px;
   }
 }
 
